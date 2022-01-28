@@ -14,9 +14,12 @@ namespace sifre_takip_app
         [STAThread]
         static void Main()
         {
+
+            CLS.SQLConnectionClass.Baglanti();
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new login());
         }
     }
 }
